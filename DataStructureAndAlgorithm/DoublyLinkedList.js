@@ -84,14 +84,10 @@ class DoublyLinkedList {
         if (index < 0 || index >= this.length) throw new Error("下标越界！");
         let currentNode = this.head;
         let count = 0;
-        while (currentNode) {
-            if (count++ == index) {
-                currentNode.data = data;
-                break;
-            }
+        while(count++ < index){
             currentNode = currentNode.next;
         }
-
+        currentNode.data = data;
     }
 
     removeAt(index) {
