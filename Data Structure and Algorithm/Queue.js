@@ -1,4 +1,4 @@
-class Queue {
+module.exports = class Queue {
 
   constructor() {
     this.items = [];
@@ -28,9 +28,10 @@ class Queue {
 
 }
 
-let q = new Queue();
-q.enqueue(1);
-q.enqueue(2);
-console.log(q.dequeue());
-console.log(q.front());
-console.log(q)
+
+// let q = new Queue();
+// q.enqueue(1);
+// q.enqueue(2);
+// console.log(q.dequeue());
+// console.log(q.front());
+// console.log(q)
